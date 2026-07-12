@@ -33,6 +33,6 @@ jobs:
         uses: google-github-actions/setup-gcloud@v3
 
       - name: Build and push Docker image
-        run: gcloud builds submit --tag us-central1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/notely-ar-repo/notely:${{ github.sha }} .
+        run: gcloud builds submit --tag us-central1-docker.pkg.dev/deep-mechanism-502208-r6/notely-ar-repo/notely:${{ github.sha }} .
 
 
